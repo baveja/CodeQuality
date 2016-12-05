@@ -1,0 +1,59 @@
+<div class="container-fluid">
+
+	<div class="phones" ng-repeat="phone in $ctrl.phones">
+		<div class="row">
+			<div class="col-md-2">
+				<p>{{phone.questionId}}</p>
+			</div>
+			<div class="col-md-8">
+				<p>{{phone.question}}</p>
+			</div>
+			<div class="col-md-2">
+				<p>
+					<input type="checkbox" ng-model="userInput" value="Yes12" checked>
+					Yes </input> <input type="checkbox" ng-model="userInput" value="No">
+					No
+				</p>
+				
+			</div>
+            <span ng-bind="userInput"/>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+			
+				<input type="text" ng-model="comments" size="150"/>
+			
+			</div>
+			
+		</div>
+
+
+	</div>
+	
+	<!-- <div class="row">
+
+		<div class="col-md-2">
+			Body content
+
+			<p ng-repeat="phone in $ctrl.phones">{{phone.questionId}}</p>
+
+
+		</div>
+		<div class="col-md-6">
+			<ul>
+				<li ng-repeat="phone in $ctrl.phones">
+					<p>{{phone.question}}
+					<p>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+			<form>
+				<input type="radio" ng-model="userInput" value="Yes12" checked> Yes </input>
+				<input type="radio" ng-model="userInput" value="No"> No
+			</form>
+			<span ng-bind="userInput"/>
+		</div>
+	</div> -->
+
+</div>

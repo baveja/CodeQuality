@@ -1,0 +1,47 @@
+[
+    {
+        "questionId": 1, 
+        "question": "API has been checked in with following support files"
+        
+    }, 
+    {
+        "questionId": 2, 
+        "question": "Policies(s) and Resources(s) are included per design"
+        
+    }, 
+    {
+        "questionId": 3, 
+        "question": "Creates, updates, and deletes should not be cached data"
+        
+    }, 
+    {
+        "questionId": 4, 
+        "question": "Does JavaScript files have documentation headers explaining the functionality, developers name, revision dates and any new functionality, documented appropriately via updated to the header?"
+        
+    }, 
+    {
+        "questionId": 5, 
+        "question": "Are the Policy name attribute and the XML policy file name identical?"
+        
+    }, 
+    {
+        "questionId": 6, 
+        "question": "Do the regression test run successfully and doesn't produce ill effects on any other systems?"
+        
+    }, 
+    {
+        "questionId": 7, 
+        "question": "Does API contains a default API proxy with a ProxyEndpoint BasePath of /"
+        
+    }, 
+    {
+        "questionId": 8, 
+        "question": "Ensure that the API keep the response cache lookup as close to the client request as possible. Conversely, you should keep the response cache population as close to the client response as possible"
+        
+    }, 
+    {
+        "questionId": 9, 
+        "question": "Does anywhere hardcoding persist in the code. If cannot remove that, put TO-DO comments and reason for that in the code."
+        
+    }
+]

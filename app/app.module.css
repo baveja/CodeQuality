@@ -1,0 +1,27 @@
+body{
+	
+	background-color:#ffffff;
+	background-image:url("images/CodeQuality.png");
+	background-repeat:repeat-x;
+	backround-attacment:center;
+}
+h2{
+	text-align: center;
+	margin-bottom:50px;
+	margin-top:50px
+}
+
+
+.form_details{
+	margin-bottom:20px
+}
+input{
+	height:25px
+}
+
+input.ng-invalid {
+    background-color:red;
+}
+input.ng-valid {
+    background-color:white;
+}

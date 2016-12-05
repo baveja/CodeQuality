@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="CodeQualityCheckApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Quality</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+     <script src="bower_components/ui-router-extras/release/ct-ui-router-extras.js"></script>
+    <script src="app.module.js"></script>
+    <link rel="stylesheet" href="app.module.css"/>
+    
+   
+    
+    <script src="question-list/question-list.module.js"></script>
+    <script src="question-list/question-list.component.js"></script>
+   
+    
+  </head>
+  <body x-ng-controller="MyController">
+   <h2>Code Quality Tool</h2>
+  <nav class="navbar navbar-inverse">
+	   <div class="container-fluid">
+	   		<div class="navbar-header">
+	   			<a class="navbar-brand" ui-sref="login">CodeQuality</a>
+	   			
+	   		</div>
+	   	
+	   	
+	   </div>
+   
+   </nav>
+   
+
+   <div ui-view></div>
+
+
+</form>
+   
+	
+  </body>
+</html>
