@@ -1,0 +1,39 @@
+<div x-ng-controller = "loginController">
+
+<div class="container-fluid">
+	
+	<div class="row">
+		<div class = "col-md-4">
+			<p>Check Review Comments</p>
+		</div>
+		<div class="col-md-8">
+		<select x-ng-model="ddlView"> 
+   			<option  x-ng-repeat="apiDetail in apiDetails" value={{apiDetail.apiNumber}}>{{apiDetail.apiName}}</option>
+   		</select>
+		
+		</div>
+	
+	</div>
+	<button ng-click="check()" class="btn btn-default">Check</button>
+    
+	<div  ng-if="!flag" class = "row" ng-if="comments" ng-repeat="comment in comments">
+		<table class="table table-bordered">
+			<tbody>
+			<tr>
+				<td><div class="col-md-6"><p>{{comment.question}}<p></div>
+				<div class="col-md-6"><p>{{comment.commentsQId}}<p></div></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div ng-if="flag">
+		<p>Review is not completed</p>
+		<button ui-sref="login" >Submit/Ask Review</button>
+	
+	</div>
+	
+</div>
+
+</div>
+ 

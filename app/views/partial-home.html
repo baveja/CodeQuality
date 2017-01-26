@@ -1,4 +1,4 @@
-   <div class="form_details">
+   <div class="form_details" ng-controller="loginController">
    	<form name="myForm1">
    		<label for="dname" class="drop">Developer Name :</label> <input type="text" id="dname" x-ng-model="dname" name="dname" size="30" required/>
    		<span ng-show="myForm1.dname.$touched && myForm1.dname.$invalid">Dname is required</span>
@@ -6,11 +6,12 @@
    		<label for="rname" class="drop">Reviewer Name :</label> <input type="text" id="rname" x-ng-model="rname" name="rname" size="30" required/>
    		<label class="drop">API Name: </label>   
    		<select x-ng-model="ddlView"> 
-   			<option x-ng-repeat="option in myForm.options" value={{option.id}}>{{option.name}}</option>
+   			<option selected = "selected" x-ng-repeat="apiDetail in apiDetails" value={{apiDetail.apiNumber}}>{{apiDetail.apiName}}</option>
    		</select>
    		<label class="drop">API Number: </label> <input type="text" value={{ddlView}} readonly></input>
    		
-   		<button class="btn btn-default" ng-disabled="myForm1.dname.$invalid && myForm1.rname.$invalid" ui-sref="questions"><span class="glyphicon glyphicon-log-in"></span>  Login</button>
+   		<button class="btn btn-default" x-ng-click="submit()" ui-sref="questions({apiName : ddlView})" ng-disabled="myForm1.dname.$invalid && myForm1.rname.$invalid"><span class="glyphicon glyphicon-log-in"></span>  Login</button>
+   		
    	</form>
    		
    	</div>

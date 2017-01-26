@@ -1,0 +1,16 @@
+<div x-ng-controller = "questionController">
+	<div class="container-fluid">
+
+		Enter Questions
+	 
+		<div class="row" ng-repeat="question in questionArr">
+			<div class="col-md-2">Question {{question.questionId}}</div>
+			<div class="col-md-10"><input type="text" x-ng-model="question.questions" size="100"/></div>
+			<hr/>
+		</div>
+
+		
+	
+	</div>
+	<button class="btn btn-default" x-ng-click="save()">Submit</button>
+</div>	
